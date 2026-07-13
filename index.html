@@ -1,87 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dream Tales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Tales</title>
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(#0B1F3A,#1B3B6F);
-color:white;
-text-align:center;
-}
-
-.hero{
-padding:80px 20px;
-}
-
-h1{
-font-size:60px;
-margin-bottom:10px;
-}
-
-h2{
-color:#FFD76A;
-font-size:32px;
-}
-
-p{
-font-size:20px;
-max-width:700px;
-margin:auto;
-line-height:1.7;
-}
-
-button{
-margin-top:35px;
-padding:18px 40px;
-font-size:22px;
-border:none;
-border-radius:50px;
-background:#FFD76A;
-cursor:pointer;
-font-weight:bold;
-}
-
-button:hover{
-transform:scale(1.05);
-}
-
-footer{
-margin-top:100px;
-padding:20px;
-opacity:.8;
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="hero">
+<header class="hero">
 
-<h1>🌙 Dream Tales</h1>
+    <h1>🌙 Dream Tales</h1>
 
-<h2>The Moon That Collected Stars</h2>
+    <p>Magical Storybooks for Little Dreamers</p>
 
-<p>
-Magical bedtime storybooks that inspire imagination,
-kindness, and courage.
-</p>
+</header>
 
-<button>Buy Now - $5</button>
+
+<section class="book-card">
+
+    <img src="images/cover.jpg" alt="Book Cover" class="cover">
+
+    <div class="info">
+
+        <h2>Nova's Special Light</h2>
+
+        <h3>A Story of Inner Shine</h3>
+
+        <div class="stars">
+            ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="price">
+            $5
+        </div>
+
+        <button>
+            Buy Now
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="preview">
+
+<h2>Preview Pages</h2>
+
+<div class="gallery">
+
+<img src="images/page1.jpg">
+
+<img src="images/page2.jpg">
+
+<img src="images/page3.jpg">
 
 </div>
 
+</section>
+
+
+<section class="about">
+
+<h2>About The Story</h2>
+
+<p>
+
+Join Nova on a magical journey through the stars and discover that every child has a special light inside.
+
+A beautiful bedtime story about kindness, courage, confidence, and believing in yourself.
+
+</p>
+
+</section>
+
+
 <footer>
 
-© Dream Tales
+© 2026 Dream Tales
 
 </footer>
 
 </body>
 
 </html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(180deg,#08152f,#102b5c);
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#FFD86A;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:22px;
+    color:#dddddd;
+}
+
+.book-card{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    background:#14284f;
+    border-radius:25px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    padding:35px;
+    gap:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.cover{
+    width:300px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.cover:hover{
+    transform:scale(1.05);
+}
+
+.info{
+    max-width:450px;
+}
+
+.info h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.info h3{
+    color:#FFD86A;
+    margin-bottom:20px;
+}
+
+.stars{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:42px;
+    color:#FFD86A;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+button{
+    background:#FFD86A;
+    color:#08152f;
+    border:none;
+    padding:16px 45px;
+    font-size:20px;
+    border-radius:40px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.preview{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.preview h2{
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.gallery img{
+    width:260px;
+    border-radius:18px;
+    transition:.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.about{
+    width:85%;
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.about h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.8;
+    color:#eeeeee;
+}
+
+footer{
+    margin-top:80px;
+    background:#061022;
+    text-align:center;
+    padding:30px;
+    color:#bbbbbb;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.book-card{
+    flex-direction:column;
+}
+
+.cover{
+    width:240px;
+}
+
+.info h2{
+    font-size:30px;
+}
+
+.price{
+    font-size:34px;
+}
+
+.gallery img{
+    width:90%;
+}
+
+}
